@@ -29,6 +29,8 @@ body{
 	background-color: rgba(0, 0, 0, .7);
 	height: 10%;
 	width: 100vw;
+	/* margin-left: 10px;
+	margin-right: 20px; */
 	/* max-width: 100vw; */
 	position: fixed;
 	top:0;
@@ -53,6 +55,7 @@ body{
 }
 #inicio .contenido header .contenido-header nav ul{
 	max-width: 100%;
+	margin-left: 15px;
 	list-style: none;
 	display: flex;
 	align-items: center;
@@ -60,10 +63,12 @@ body{
 #inicio .contenido header .contenido-header nav ul li a{
 	text-decoration: none;
 	color: #fff;
-	margin: 0 12px;
-	font-weight: 350;
+	margin: 15px 12px;
+	margin-right: 56px;
+	font-weight: 380;
 	transition: .5s;
 	font-weight: bold
+	
 }
 
 #inicio .contenido header .contenido-header nav ul a:hover{
@@ -84,7 +89,7 @@ body{
 }
 #inicio .contenido .presentacion .bienvenida{
 	font-size: 16px;
-	margin-bottom: 20px;
+	margin-bottom: 20px; 
 	text-transform: uppercase;
 	letter-spacing: 5px;
 }
@@ -107,7 +112,7 @@ body{
 #inicio .contenido .presentacion a{
 	text-decoration: none;
 	display: inline-block;
-	margin: 25px;
+	margin: 25px; 
 	padding: 20px 25px;
 	border: 2px solid #fff;
 	border-radius: 50px;
@@ -133,7 +138,6 @@ body{
 #sobremi .contenedor-foto{
 	max-width: 400px;
 	padding: 40px;
-	/* margin-right: 80px; */
 }
 #sobremi .contenedor-foto img{
    padding: 20px;
@@ -184,7 +188,8 @@ body{
 #sobremi .sobremi a{
 	display: inline-block;
 	/* position: absolute; */
-	margin-left: 30%;
+	margin-left: 10%;
+	margin-right: 10%;
 	text-decoration: none;
 	color:#000;
 	padding: 10px 20px;
@@ -197,12 +202,10 @@ body{
 	background-color:#49e7f2;
 	color: #ffff;
 }
-#titulo-profesional{
-	margin-left: 15px;
-}
 
 #titulo-profesional .titulo-profesional .titulo-director{
 	font-size: 22px;
+	margin-left: 15px;
 	text-transform: uppercase;
     color:#111135 ;
     text-decoration: underline;
@@ -284,7 +287,7 @@ body{
 	line-height: 25px;
 	color: #303333;
 	margin-bottom: 12px;
-	margin-left: 10px;
+	margin-left: 15px;
 }
 #trayectoria-jugador nav ul li span{
 	color:#49e7f2;
@@ -318,7 +321,9 @@ body{
 }
 #trayectoria-jugador .trayectoria-jugador a{
 	display: inline-block;
-	margin-left: 40%;
+	margin-left: 30%;
+	margin-right: 30%;
+	justify-content: center;
 	text-decoration: none;
 	color:#000;
 	padding: 15px 20px;
@@ -366,7 +371,7 @@ body{
 }
 #trayectoria-tecnico .trayectoria-tecnico a{
 	display: inline-block;
-	margin-left: 40%;
+	margin-left: 30%;
 	margin-bottom: 10px;
 	text-decoration: none;
 	color:#000;
@@ -383,6 +388,15 @@ body{
 	background-color:#49e7f2;
 	color: #ffff;
 }
+.trayectoria-tecnico .h2-tarjetas{
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	letter-spacing: 3px;
+	text-align: center;
+    position: relative;
+}
     
 .tarjetas{
 	display: flex;
@@ -393,11 +407,12 @@ body{
 	padding: 0;
 }
 
+
 .card{
 	width: 320px;
 	height:320px;
 	margin: auto;
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 	/* margin:10px; */
 	/* padding: 35px; */
 }
@@ -411,7 +426,7 @@ body{
 	overflow: hidden;
 	transition: .75s;
 	/* padding: 15; */
-	/* margin-left: 15px; */
+ 	margin-left: 15px;
 }
 .card .front{
 	transform: perspective(700px) rotateY(0deg);
@@ -433,6 +448,7 @@ body{
 	color: #fff;
 	background: rgba(0, 0, 0, .4);
 	text-align: center;
+	font-size: 25px;
 }
 .card .back{
 	transform: perspective(700px) rotateY(180deg);
@@ -444,18 +460,26 @@ body{
 	flex-direction: column;
 	justify-content: space-between;
 	text-align: center;
+	font-size: 15px;
+	margin: 10px;
+}
+.card .back p{
+	margin: 10px;
+}
+.card .back h3{
+	margin: 15px;
 }
 
 .card:hover .front{
-	transform: perspective(700px) rotateY(180deg);
+	transform: perspective(600px) rotateY(180deg);
 }
 
 .card:hover .back{
-	transform: perspective(700px) rotateY(360deg);
+	transform: perspective(600px) rotateY(360deg);
 }
 #sagitario{
 	position: relative;
-	margin: 30px;
+	margin: 25px;
 }
 
 #sagitario .escuela-sagitario h1{
@@ -639,9 +663,6 @@ body{
     text-transform: uppercase;
 	margin:10px 5px 0 10px;
     color:#000 ;
-    text-decoration: underline;
-    text-decoration-color:#49e7f2 ;
-    text-decoration-thickness: 5px;
 }
 #proyecto .proyecto-carlos h1 span{
     color:#49e7f2;
@@ -656,8 +677,9 @@ body{
 	text-decoration: none;
 	color:#000;
 	/* margin:20px 0 10px; */
-	margin-left: 49%;
+	margin-left: 25px;
 	margin-bottom: 10px;
+	margin-top: 20px;
 	padding: 10px 20px;
 	border-radius: 30px;
 	border:1px solid #000;
@@ -704,8 +726,6 @@ body{
     text-transform: uppercase;
 	margin:10px 5px 0 10px;
     color:#000 ;
-    text-decoration: underline;
-    text-decoration-color:#49e7f2 ;
     text-decoration-thickness: 5px;
 	margin-bottom: 15px;
 }
